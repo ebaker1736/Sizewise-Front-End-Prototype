@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
-    <title>twitter  facebook</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Desktop-Copy" sketch:type="MSArtboardGroup" transform="translate(-308.000000, -1893.000000)" fill="#EEF1FA">
-            <g id="Group-6" sketch:type="MSLayerGroup" transform="translate(155.000000, 1893.000000)">
-                <g id="Group-7" sketch:type="MSShapeGroup">
-                    <g id="Social-Icons" transform="translate(153.000000, 0.000000)">
-                        <path d="M19.0033784,29.4598344 L19.0033784,18.3398438 L22.7533784,18.3398438 L23.3832612,14.0185547 L19.0033784,14.0185547 L19.0033784,10.6201172 C19.0033784,9.99511406 19.1620682,9.51660322 19.4794526,9.18457031 C19.796837,8.8525374 20.2631409,8.68652344 20.8783784,8.68652344 L23.6908784,8.68652344 L23.6908784,4.79003906 C22.8510304,4.65331963 21.8256501,4.58496094 20.6147065,4.58496094 C18.6029777,4.58496094 17.0673485,5.09520974 16.0077729,6.11572266 C14.9481973,7.13623557 14.4184174,8.52538184 14.4184174,10.2832031 L14.4184174,14.0185547 L10.6684174,14.0185547 L10.6684174,18.3398438 L14.4184174,18.3398438 L14.4184174,29.9889326 C6.40368805,29.683381 0,23.0895213 0,15 C0,6.71572875 6.71572875,0 15,0 C23.2842712,0 30,6.71572875 30,15 C30,21.8978369 25.3440279,27.7082132 19.0033784,29.4598344 Z" id="twitter--facebook"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><title>twitter facebook</title><path d="M19.003 29.46V18.34h3.75l.63-4.32h-4.38v-3.4c0-.625.16-1.103.476-1.435.317-.332.783-.498 1.398-.498h2.813V4.79c-.84-.137-1.864-.205-3.075-.205-2.012 0-3.548.51-4.607 1.53-1.06 1.02-1.59 2.41-1.59 4.168v3.736h-3.75v4.32h3.75v11.65C6.404 29.682 0 23.09 0 15 0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15 0 6.898-4.656 12.708-10.997 14.46z" fill="#EEF1FA" fill-rule="evenodd"/></svg>
