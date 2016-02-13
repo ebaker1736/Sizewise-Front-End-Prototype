@@ -1,1 +1,4 @@
-# Sizewise-Front-End-Prototype
+# Sizewise
+
+
+A [Puppy](https://github.com/Upstatement/generator-puppy) powered project.

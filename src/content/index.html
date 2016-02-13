@@ -1,0 +1,63 @@
+---
+title: Sizewise
+---
+{% extends "layouts/base.twig" %}
+
+{% block styles %}
+<link rel="stylesheet" href="/static/css/main.css">
+<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700|Work+Sans:400,300,600' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block content %}
+<div class="block__1">
+	<div class="block__1__content">
+		<div class="block__1__intro">
+			<img class="logo" src="/static/img/logo.svg" />
+			<h1 class="block__1__intro__p">The most comprehensive discovery of styles; the most refined preferences of fit.</h1>
+		</div>
+		<form class="email-signup" action="demo_form.asp">
+			<input class="email-signup__input" type="text" name="email" value="yourname@email.com"></input>
+			<input class=email-signup__button type="submit" value="Keep In Touch"></input>
+		</form>
+	</div>
+</div>
+<div class="block__2">
+	<div class="block__2__content">
+		<h2>Sizewise is an app that allows you to discover new brands and styles of clothing that fit to your preferences.</h2>
+		<p>We’re founded on the essential truth that there is no such thing as an ideal fit for your body.</p>
+		<h3>You’re an individual.</h3>
+		<p>Actually, there isn’t even an ideal fit for you.  You want different fits on a night out versus a hike.</p>
+		<h3>Your size and shape don’t matter.</h3>
+		<p>When you’re looking for clothes, what you need to know is how new brands and styles fit in comparison to an item already in your closet.</p>
+	</div>
+</div>
+<div class="block__3">
+	<div class="block__3__content">
+		<div class="card">
+			<h4>Discover</h4>
+			<p>Know you’ll love the fit, without trying it on. Even if you’re not familiar with the brand.</p>
+			<p>Discover new brands and styles that fit the way you want.</p>
+		</div>
+		<div class="card">
+			<h4>Check</h4>
+			<p>Before you “Add to cart”, how about a little meaningful context?</p>
+			<p>Check how an item you’re thinking of buying fits before it ships.</p>
+		</div>
+		<img class="phone-screenshot" src="/static/img/phone_screen_discover.png" />
+	</div>
+</div>
+<div class="block__footer">
+	<div class="block__footer__item">
+		<p>Connect with us!</p>
+		<img class="block__footer__item__icn--facebook" src"/static/img/icn--facebook.svg" />
+	</div>
+	<div class="block__footer__item">
+		<a href="mailto: hello@checksizewise.com">hello@checksizewise.com</a>
+	</div>
+	<div class="block__footer__item">
+		<p>© 2016 Sizewise Inc.</p>
+	</div>
+	 
+</div>
+
+{% endblock %}
