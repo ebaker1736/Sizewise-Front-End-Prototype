@@ -4,10 +4,13 @@ body {
 
 h1 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 18pt;
+  font-size: 16pt;
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 1.25; }
+  @media (min-width: 1000px) {
+    h1 {
+      font-size: 18pt; } }
 
 h2 {
   font-family: 'Work Sans', sans-serif;
@@ -48,23 +51,37 @@ p, .block__footer__item > a {
   margin: 0 auto;
   background-image: url("/static/img/phone_screen_dashboard.png");
   background-repeat: no-repeat;
-  background-position: 90% 50px; }
+  background-position: 90% 50px;
+  background-size: 30%; }
 
 .block__1__intro {
   float: left;
+  width: 45%;
   max-width: 380px;
-  margin-left: 11%;
-  margin-top: 50px; }
+  margin: 50px 0 0 8%; }
+  @media (min-width: 1000px) {
+    .block__1__intro {
+      margin: 50px 0 0 11%; } }
+
+.logo {
+  width: 100%; }
 
 .block__1__intro__p {
-  margin: 50px 0; }
+  margin: 40px 0; }
+  @media (min-width: 1000px) {
+    .block__1__intro__p {
+      margin: 50px 0; } }
 
 .email-signup {
+  width: 45%;
   max-width: 380px;
-  margin-left: 11%; }
+  margin-left: 8%; }
+  @media (min-width: 1000px) {
+    .email-signup {
+      margin-left: 11%; } }
 
 .email-signup__input {
-  width: 100%;
+  width: 88%;
   max-width: 340px;
   height: 50px;
   border: 2pt solid #003DFF;
@@ -83,7 +100,7 @@ p, .block__footer__item > a {
 .email-signup__button {
   width: 58%;
   height: 50px;
-  margin: 20px 21% 100px;
+  margin: 20px 21% 50px;
   -webkit-border-radius: 25px;
           border-radius: 25px;
   border: 2pt solid #003DFF;
@@ -91,7 +108,7 @@ p, .block__footer__item > a {
   background-color: #FEEE01;
   font-family: 'Inconsolata';
   font-weight: 700;
-  font-size: 14pt;
+  font-size: 12pt;
   text-transform: uppercase;
   letter-spacing: 1pt;
   -webkit-box-shadow: 0 3px 0 #C6D3FE;
@@ -99,6 +116,10 @@ p, .block__footer__item > a {
   -webkit-transition: .05s linear;
   transition: .05s linear;
   cursor: pointer; }
+  @media (min-width: 1000px) {
+    .email-signup__button {
+      margin: 20px 21% 100px;
+      font-size: 14pt; } }
   .email-signup__button:hover {
     -webkit-transform: translateY(1px);
         -ms-transform: translateY(1px);
@@ -119,9 +140,12 @@ p, .block__footer__item > a {
   border-bottom: 2pt solid #003DFF; }
 
 .block__2__content {
-  width: 60%;
+  width: 84%;
   max-width: 1000px;
   margin: 0 auto; }
+  @media (min-width: 1000px) {
+    .block__2__content {
+      width: 60%; } }
 
 .block__3 {
   padding: 100px 0; }
@@ -138,13 +162,20 @@ p, .block__footer__item > a {
   max-width: 420px;
   background-color: white;
   border: 2pt solid #003DFF;
-  padding: 20px;
+  padding: 15px;
   float: right;
   clear: both;
-  margin: 40px 11% 0 0;
+  margin: 0 8% 0 0;
   position: relative; }
+  @media (min-width: 1000px) {
+    .card {
+      margin: 40px 11% 0 0;
+      padding: 20px; } }
   .card:last-of-type {
-    margin-top: 50px; }
+    margin-top: 30px; }
+    @media (min-width: 1000px) {
+      .card:last-of-type {
+        margin-top: 50px; } }
   .card::before {
     display: block;
     position: absolute;
@@ -158,10 +189,21 @@ p, .block__footer__item > a {
             transform: translate(-5px, -5px); }
 
 .phone-screenshot {
-  margin-left: 11%; }
+  margin-left: 8%;
+  width: 30%;
+  max-width: 300px; }
+  @media (min-width: 1000px) {
+    .phone-screenshot {
+      margin-left: 11%; } }
 
 .block__footer {
   background-color: #003DFF;
+  width: 100%; }
+
+.block__footer__content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   color: white;
   display: -webkit-box;
   display: -webkit-flex;
@@ -169,8 +211,7 @@ p, .block__footer__item > a {
   display: flex;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
-          justify-content: space-around;
-  width: 100%; }
+          justify-content: space-around; }
 
 .block__footer__item {
   display: -webkit-box;
@@ -192,12 +233,14 @@ p, .block__footer__item > a {
     opacity: 0.6; }
   .block__footer__item > p, .block__footer__item > a {
     font-weight: 300;
-    display: inline-block; }
+    display: inline-block;
+    font-size: 12pt; }
   .block__footer__item > img {
     display: inline-block;
     margin-left: 10px; }
   .block__footer__item > a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 12pt; }
 
 /*# sourceMappingURL=main.css.map */

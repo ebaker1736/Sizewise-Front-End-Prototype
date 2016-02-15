@@ -12,6 +12,12 @@ $periwinkle: #EEF1FA;
 $periwinkle-darker: #C6D3FE;
 $yellow: #FEEE01;
 
+//Breakpoints
+
+$bp-lg: 1000px;
+$bp-md: 700px;
+$bp-sm: 500px;
+
 body {
 	margin: 0;
 	color: $blue;
@@ -19,10 +25,14 @@ body {
 
 h1 {
 	font-family: 'Work Sans', sans-serif;
-	font-size: 18pt;
+	font-size: 16pt;
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.25;
+
+    @include mq($bp-lg) {
+        font-size: 18pt;
+    }
 }
 
 h2 {
@@ -70,26 +80,44 @@ p {
 	background-image: url("/static/img/phone_screen_dashboard.png");
 	background-repeat: no-repeat;
     background-position: 90% 50px;
+    background-size: 30%;
 }
 
 .block__1__intro {
 	float: left;
+    width: 45%;
 	max-width: 380px;
-	margin-left: 11%;
-    margin-top: 50px;
+    margin: 50px 0 0 8%;
+
+    @include mq($bp-lg) {
+        margin: 50px 0 0 11%;
+    }
+}
+
+.logo {
+    width: 100%;
 }
 
 .block__1__intro__p {
-	margin: 50px 0;
+    margin: 40px 0;
+
+    @include mq($bp-lg) {
+        margin: 50px 0;
+    }
 }
 
 .email-signup {
+    width: 45%;
 	max-width: 380px;
-	margin-left: 11%;
+	margin-left: 8%;
+
+    @include mq($bp-lg) {
+        margin-left: 11%;
+    }
 }
 
 .email-signup__input {
-	width: 100%;
+	width: 88%;
     max-width: 340px;
     height: 50px;
     border: 2pt solid $blue;
@@ -112,19 +140,24 @@ p {
 .email-signup__button {
 	width: 58%;
     height: 50px;
-    margin: 20px 21% 100px;
+    margin: 20px 21% 50px;
     border-radius: 25px;
     border: 2pt solid $blue;
     color: $blue;
     background-color: $yellow;
     font-family: 'Inconsolata';
     font-weight: 700;
-    font-size: 14pt;
+    font-size: 12pt;
     text-transform: uppercase;
     letter-spacing: 1pt;
     box-shadow: 0 3px 0 $periwinkle-darker;
     transition: .05s linear;
     cursor: pointer;
+
+    @include mq($bp-lg) {
+        margin: 20px 21% 100px;
+        font-size: 14pt;
+    }
 
     &:hover {
     	transform: translateY(1px);
@@ -145,9 +178,13 @@ p {
 }
 
 .block__2__content {
-	width: 60%;
+	width: 84%;
 	max-width: 1000px;
 	margin: 0 auto;
+
+    @include mq($bp-lg) {
+        width: 60%;
+    }
 }
 
 .block__3 {
@@ -167,14 +204,23 @@ p {
     max-width: 420px;
     background-color: white;
     border: 2pt solid #003DFF;
-    padding: 20px;
+    padding: 15px;
     float: right;
     clear: both;
-    margin: 40px 11% 0 0;
+    margin: 0 8% 0 0;
     position: relative;
 
+    @include mq($bp-lg) {
+      margin: 40px 11% 0 0;
+      padding: 20px;  
+    }
+
     &:last-of-type {
-        margin-top: 50px; 
+        margin-top: 30px; 
+
+        @include mq($bp-lg) {
+            margin-top: 50px;
+        }
     }
 
     &::before {
@@ -190,15 +236,27 @@ p {
 }
 
 .phone-screenshot {
-	margin-left: 11%;
+	margin-left: 8%;
+    width: 30%;
+    max-width: 300px;
+
+    @include mq($bp-lg) {
+        margin-left: 11%;
+    }
 }
 
 .block__footer {
     background-color: $blue;
+    width: 100%;
+}
+
+.block__footer__content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     color: white;
     display: flex;
     justify-content: space-around;
-    width: 100%;
 }
 
 .block__footer__item {
@@ -220,6 +278,7 @@ p {
     > p {
         font-weight: 300;
         display: inline-block;
+        font-size: 12pt;
     }
 
     > img {
@@ -231,5 +290,6 @@ p {
         @extend p;
         color: white;
         text-decoration: none;
+        font-size: 12pt;
     }
 }
