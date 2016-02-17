@@ -22,7 +22,7 @@
 			<h1 class="block__1__intro__p">The most comprehensive discovery of styles; the most refined preferences of fit.</h1>
 		</div>
 		<form class="email-signup" action="demo_form.asp">
-			<input class="email-signup__input" type="text" name="email" value="yourname@email.com"></input>
+			<input class="email-signup__input" id="input_field" type="text" name="email" onfocus="if(this.value == 'yourname@email.com') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'yourname@email.com'; }" value="yourname@email.com"></input>
 			<input class=email-signup__button type="submit" value="Keep In Touch"></input>
 		</form>
 	</div>
@@ -44,26 +44,27 @@
 			<p>Know you’ll love the fit, without trying it on. Even if you’re not familiar with the brand.</p>
 			<p>Discover new brands and styles that fit the way you want.</p>
 		</div>
+		<img class="phone-screenshot" src="/static/img/phone_screen_discover_600px.png" />
 		<div class="card">
 			<h4>Check</h4>
 			<p>Before you “Add to cart”, how about a little meaningful context?</p>
 			<p>Check how an item you’re thinking of buying fits before it ships.</p>
 		</div>
-		<img class="phone-screenshot" src="/static/img/phone_screen_discover.png" />
 	</div>
 </div>
 <div class="block__footer">
-	<a class="block__footer__item" href="#">
-		<p>Connect with us!</p>
-		<img class="block__footer__item__icn--facebook" src="/static/img/icn--facebook.svg" />
-	</a>
-	<div class="block__footer__item">
-		<a href="mailto: hello@checksizewise.com">hello@checksizewise.com</a>
+	<div class="block__footer__content">
+		<a class="block__footer__item" href="#">
+			<p>Connect with us!</p>
+			<img class="block__footer__item__icn--facebook" src="/static/img/icn--facebook.svg" />
+		</a>
+		<div class="block__footer__item">
+			<a href="mailto: hello@checksizewise.com">hello@checksizewise.com</a>
+		</div>
+		<div class="block__footer__item copyright">
+			<p>© 2016 Sizewise Inc.</p>
+		</div>
 	</div>
-	<div class="block__footer__item copyright">
-		<p>© 2016 Sizewise Inc.</p>
-	</div>
-	 
 </div>
 
 
