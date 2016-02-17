@@ -21,6 +21,7 @@ $bp-sm: 500px;
 body {
 	margin: 0;
 	color: $blue;
+    background-color: $periwinkle;
 }
 
 h1 {
@@ -95,19 +96,28 @@ p {
 	margin: 0 auto;
 	background-image: url("/static/img/phone_screen_dashboard_600px.png");
 	background-repeat: no-repeat;
-    background-position: 90% 40px;
-    background-size: 30%;
+    background-position: 50% 143px;
+    background-size: 66%;
 
+    @include mq($bp-sm) {
+        background-position: 90% 40px;
+        background-size: 30%;
+    }
     @include mq($bp-md) {
         background-position: 90% 50px;
     }
 }
 
 .block__1__intro {
-	float: left;
-    width: 45%;
+    width: 80%;
 	max-width: 380px;
-    margin: 40px 0 0 8%;
+    margin: 40px auto 0;
+
+    @include mq($bp-sm) {
+        float: left;
+        width: 45%;
+        margin: 40px 0 0 8%;
+    }
 
     @include mq($bp-md) {
         margin: 50px 0 0 8%;
@@ -135,9 +145,17 @@ p {
 }
 
 .email-signup {
-    width: 45%;
+    width: 80%;
 	max-width: 380px;
-	margin-left: 8%;
+	margin: 325px auto 0;
+    position: relative;
+    z-index: 2;
+
+    @include mq($bp-sm) {
+        width: 45%;
+        max-width: 380px;
+        margin: 0 0 0 8%;
+    }
 
     @include mq($bp-lg) {
         margin-left: 11%;
@@ -170,6 +188,10 @@ p {
     	outline: none;
     	background-color: $periwinkle-darker;
     }
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px $periwinkle-darker inset;
 }
 
 .email-signup__button {
@@ -216,9 +238,18 @@ p {
 }
 
 .block__2 {
-	padding: 40px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: -122px;
+	padding: 100px 0 20px;
+    background-color: white; 
 	border-top: 2pt solid $blue;
 	border-bottom: 2pt solid $blue;
+
+    @include mq($bp-sm) {
+        padding: 40px 0;
+        margin: 0;
+    }
 
     @include mq($bp-md) {
         padding: 60px 0;
@@ -236,7 +267,11 @@ p {
 }
 
 .block__3 {
-	padding: 40px 0 80px;
+	padding: 40px 0 60px;
+
+    @include mq($bp-sm) {
+        padding: 40px 0 80px;
+    }
 
     @include mq($bp-md) {
         padding: 100px 0;
@@ -252,14 +287,19 @@ p {
 }
 
 .card {
-	width: 94%;
+	width: 80%;
     max-width: 420px;
     padding: 15px;
-    margin: 0 auto;
+    margin: 0 2% 0 3%;
     position: relative;
 
     background-color: white;
     border: 2pt solid #003DFF;
+
+    @include mq($bp-sm) {
+        width: 94%;
+        margin: 0 auto;
+    }
 
     @include mq($bp-md) {
         width: 40%;
@@ -344,7 +384,11 @@ p {
     > p {
         font-weight: 300;
         display: inline-block;
-        font-size: 10pt;
+        font-size: 6pt;
+
+        @include mq($bp-sm) {
+            font-size: 10pt;
+        }
 
         @include mq($bp-md) {
             font-size: 12pt;
@@ -354,7 +398,11 @@ p {
     > img {
         display: inline-block;
         margin-left: 10px;
-        width: 20px;
+        width: 10px;
+
+        @include mq($bp-sm) {
+            width: 20px;
+        }
 
         @include mq($bp-md) {
             width: 30px;
@@ -365,7 +413,11 @@ p {
         @extend p;
         color: white;
         text-decoration: none;
-        font-size: 10pt;
+        font-size: 6pt;
+
+        @include mq($bp-sm) {
+            font-size: 10pt;
+        }
 
         @include mq($bp-md) {
             font-size: 12pt;

@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  color: #003DFF; }
+  color: #003DFF;
+  background-color: #EEF1FA; }
 
 h1 {
   font-family: 'Work Sans', sans-serif;
@@ -63,17 +64,25 @@ p, .block__footer__item > a {
   margin: 0 auto;
   background-image: url("/static/img/phone_screen_dashboard_600px.png");
   background-repeat: no-repeat;
-  background-position: 90% 40px;
-  background-size: 30%; }
+  background-position: 50% 143px;
+  background-size: 66%; }
+  @media (min-width: 500px) {
+    .block__1__content {
+      background-position: 90% 40px;
+      background-size: 30%; } }
   @media (min-width: 700px) {
     .block__1__content {
       background-position: 90% 50px; } }
 
 .block__1__intro {
-  float: left;
-  width: 45%;
+  width: 80%;
   max-width: 380px;
-  margin: 40px 0 0 8%; }
+  margin: 40px auto 0; }
+  @media (min-width: 500px) {
+    .block__1__intro {
+      float: left;
+      width: 45%;
+      margin: 40px 0 0 8%; } }
   @media (min-width: 700px) {
     .block__1__intro {
       margin: 50px 0 0 8%; } }
@@ -94,9 +103,16 @@ p, .block__footer__item > a {
       margin: 50px 0; } }
 
 .email-signup {
-  width: 45%;
+  width: 80%;
   max-width: 380px;
-  margin-left: 8%; }
+  margin: 325px auto 0;
+  position: relative;
+  z-index: 2; }
+  @media (min-width: 500px) {
+    .email-signup {
+      width: 45%;
+      max-width: 380px;
+      margin: 0 0 0 8%; } }
   @media (min-width: 1000px) {
     .email-signup {
       margin-left: 11%; } }
@@ -123,6 +139,9 @@ p, .block__footer__item > a {
   .email-signup__input:focus {
     outline: none;
     background-color: #C6D3FE; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #C6D3FE inset; }
 
 .email-signup__button {
   width: 58%;
@@ -167,9 +186,17 @@ p, .block__footer__item > a {
             box-shadow: none; }
 
 .block__2 {
-  padding: 40px 0;
+  position: relative;
+  z-index: 1;
+  margin-top: -122px;
+  padding: 100px 0 20px;
+  background-color: white;
   border-top: 2pt solid #003DFF;
   border-bottom: 2pt solid #003DFF; }
+  @media (min-width: 500px) {
+    .block__2 {
+      padding: 40px 0;
+      margin: 0; } }
   @media (min-width: 700px) {
     .block__2 {
       padding: 60px 0; } }
@@ -183,7 +210,10 @@ p, .block__footer__item > a {
       width: 60%; } }
 
 .block__3 {
-  padding: 40px 0 80px; }
+  padding: 40px 0 60px; }
+  @media (min-width: 500px) {
+    .block__3 {
+      padding: 40px 0 80px; } }
   @media (min-width: 700px) {
     .block__3 {
       padding: 100px 0; } }
@@ -196,13 +226,17 @@ p, .block__footer__item > a {
   z-index: 0; }
 
 .card {
-  width: 94%;
+  width: 80%;
   max-width: 420px;
   padding: 15px;
-  margin: 0 auto;
+  margin: 0 2% 0 3%;
   position: relative;
   background-color: white;
   border: 2pt solid #003DFF; }
+  @media (min-width: 500px) {
+    .card {
+      width: 94%;
+      margin: 0 auto; } }
   @media (min-width: 700px) {
     .card {
       width: 40%;
@@ -281,21 +315,30 @@ p, .block__footer__item > a {
   .block__footer__item > p, .block__footer__item > a {
     font-weight: 300;
     display: inline-block;
-    font-size: 10pt; }
+    font-size: 6pt; }
+    @media (min-width: 500px) {
+      .block__footer__item > p, .block__footer__item > a {
+        font-size: 10pt; } }
     @media (min-width: 700px) {
       .block__footer__item > p, .block__footer__item > a {
         font-size: 12pt; } }
   .block__footer__item > img {
     display: inline-block;
     margin-left: 10px;
-    width: 20px; }
+    width: 10px; }
+    @media (min-width: 500px) {
+      .block__footer__item > img {
+        width: 20px; } }
     @media (min-width: 700px) {
       .block__footer__item > img {
         width: 30px; } }
   .block__footer__item > a {
     color: white;
     text-decoration: none;
-    font-size: 10pt; }
+    font-size: 6pt; }
+    @media (min-width: 500px) {
+      .block__footer__item > a {
+        font-size: 10pt; } }
     @media (min-width: 700px) {
       .block__footer__item > a {
         font-size: 12pt; } }

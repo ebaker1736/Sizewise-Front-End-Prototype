@@ -22,7 +22,7 @@
 			<h1 class="block__1__intro__p">The most comprehensive discovery of styles; the most refined preferences of fit.</h1>
 		</div>
 		<form class="email-signup" action="demo_form.asp">
-			<input class="email-signup__input" type="text" name="email" value="yourname@email.com"></input>
+			<input class="email-signup__input" id="input_field" type="text" name="email" onfocus="if(this.value == 'yourname@email.com') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'yourname@email.com'; }" value="yourname@email.com"></input>
 			<input class=email-signup__button type="submit" value="Keep In Touch"></input>
 		</form>
 	</div>
